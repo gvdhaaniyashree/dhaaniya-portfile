@@ -1,0 +1,569 @@
+/* =========================================
+   REVERSE FITNESS APP
+   MAIN FRONTEND STYLES
+========================================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #050b10;
+  color: #ffffff;
+}
+
+/* =========================================
+   APP
+========================================= */
+
+.app {
+  min-height: 100vh;
+  max-width: 430px;
+  margin: 0 auto;
+  background: #071117;
+  padding-bottom: 90px;
+}
+
+/* =========================================
+   TOP BAR
+========================================= */
+
+.topbar {
+  min-height: 72px;
+  padding: 12px 18px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  background: #071117;
+  border-bottom: 1px solid #1b2b32;
+
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.topbar h1 {
+  flex: 1;
+  color: #57f2c2;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.streak {
+  background: #35251e;
+  border: 1px solid #70452e;
+  color: #ffb26d;
+
+  padding: 8px 11px;
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.header-icons {
+  display: flex;
+  gap: 4px;
+}
+
+.header-icons button {
+  background: transparent;
+  color: #9aaeb4;
+  font-size: 18px;
+  padding: 5px;
+}
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.content {
+  padding: 20px 16px;
+}
+
+.content h2 {
+  font-size: 21px;
+  margin-bottom: 14px;
+}
+
+.content section > h2 {
+  margin-top: 8px;
+}
+
+/* =========================================
+   WELCOME CARD
+========================================= */
+
+.welcome-card {
+  padding: 22px;
+
+  border-radius: 24px;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      #1b4b45,
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      #123331,
+      #0d1c24
+    );
+
+  border: 1px solid #316e63;
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.35);
+}
+
+.welcome-card > p:first-child {
+  color: #57f2c2;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.welcome-card h2 {
+  margin: 11px 0;
+  font-size: 26px;
+}
+
+.quote {
+  color: #c4d0d3;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.stats span {
+  padding: 9px 12px;
+  border-radius: 18px;
+
+  background: #08181d;
+  border: 1px solid #20383e;
+
+  color: #dce8e9;
+  font-size: 11px;
+}
+
+/* =========================================
+   METRICS TITLE
+========================================= */
+
+.metrics-title {
+  margin: 25px 2px 14px;
+}
+
+.metrics-title h2 {
+  margin-bottom: 4px;
+}
+
+.metrics-title span {
+  color: #82969d;
+  font-size: 12px;
+}
+
+/* =========================================
+   METRIC GRID
+========================================= */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* =========================================
+   CARDS
+========================================= */
+
+.card {
+  background: #101a25;
+  border: 1px solid #1e3039;
+
+  border-radius: 20px;
+  padding: 17px;
+
+  margin-bottom: 13px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.22);
+}
+
+.grid .card {
+  min-height: 172px;
+  position: relative;
+}
+
+.card h3 {
+  color: #dce7e9;
+  font-size: 14px;
+  margin: 9px 0 10px;
+}
+
+.card strong {
+  display: block;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.card strong small {
+  font-size: 12px;
+  font-weight: 400;
+  color: #91a5aa;
+}
+
+.card p {
+  color: #8fa1a7;
+  font-size: 12px;
+}
+
+/* =========================================
+   METRIC ICONS
+========================================= */
+
+.metric-icon {
+  width: 39px;
+  height: 39px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  font-size: 19px;
+}
+
+.sleep-icon {
+  background: #29254c;
+}
+
+.water-icon {
+  background: #123c48;
+}
+
+.activity-icon {
+  background: #183b31;
+}
+
+.sensor-icon {
+  background: #49321f;
+}
+
+/* =========================================
+   PROGRESS BAR
+========================================= */
+
+.progress {
+  width: 100%;
+  height: 6px;
+
+  background: #1c2b32;
+
+  border-radius: 10px;
+
+  margin-top: 16px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.sleep-progress {
+  background: #a895ff;
+}
+
+.water-progress {
+  background: #38d9ed;
+}
+
+.activity-progress {
+  background: #5de2b7;
+}
+
+.sensor-progress {
+  background: #f4a261;
+}
+
+/* =========================================
+   WATER BUTTON
+========================================= */
+
+.add-water {
+  position: absolute;
+
+  right: 14px;
+  top: 16px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+
+  background: #1c8b99;
+  color: white;
+
+  font-size: 19px;
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+.add-water:hover {
+  transform: scale(1.08);
+  background: #25a9b8;
+}
+
+/* =========================================
+   SENSOR
+========================================= */
+
+.sensor-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sensor-status {
+  color: #62e7b9;
+  background: #10382e;
+
+  border: 1px solid #24644f;
+
+  padding: 5px 7px;
+  border-radius: 8px;
+
+  font-size: 8px;
+  font-weight: 700;
+}
+
+/* =========================================
+   AI COACH
+========================================= */
+
+input[type="text"] {
+  width: 100%;
+
+  margin-top: 16px;
+
+  padding: 13px 14px;
+
+  border-radius: 12px;
+
+  border: 1px solid #29404a;
+
+  background: #081219;
+
+  color: white;
+
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #57f2c2;
+}
+
+input::placeholder {
+  color: #65777d;
+}
+
+.coach-button {
+  margin-top: 10px;
+
+  padding: 10px 17px;
+
+  border-radius: 11px;
+
+  background: #2a9d8f;
+  color: white;
+
+  font-weight: 600;
+}
+
+.coach-button:hover {
+  background: #35b5a4;
+}
+
+/* =========================================
+   FOOD UPLOAD
+========================================= */
+
+input[type="file"] {
+  width: 100%;
+  margin-top: 15px;
+
+  padding: 10px;
+
+  border: 1px dashed #34515b;
+  border-radius: 12px;
+
+  background: #09131a;
+  color: #9db0b5;
+
+  font-size: 12px;
+}
+
+/* =========================================
+   PROFILE
+========================================= */
+
+.profile-card {
+  text-align: center;
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+
+  margin: 10px auto 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #16493e;
+  border: 2px solid #57f2c2;
+
+  color: #57f2c2;
+
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.profile-card > h2 {
+  margin-bottom: 5px;
+}
+
+.profile-card > p {
+  color: #83969d;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   BADGES
+========================================= */
+
+.card p + p {
+  margin-top: 10px;
+}
+
+/* =========================================
+   BOTTOM NAVIGATION
+========================================= */
+
+.bottom-nav {
+  position: fixed;
+
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 100%;
+  max-width: 430px;
+
+  height: 76px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background: rgba(7, 17, 23, 0.97);
+
+  border-top: 1px solid #1b3038;
+
+  backdrop-filter: blur(12px);
+
+  z-index: 50;
+}
+
+.bottom-nav button {
+  min-width: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  background: transparent;
+
+  color: #71858b;
+
+  font-size: 10px;
+
+  transition: 0.2s;
+}
+
+.nav-icon {
+  font-size: 20px;
+}
+
+.bottom-nav button.active {
+  color: #57f2c2;
+  font-weight: 700;
+}
+
+.bottom-nav button.active .nav-icon {
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+  .app {
+    width: 100%;
+  }
+
+  .content {
+    padding: 18px 14px;
+  }
+
+  .welcome-card {
+    padding: 20px;
+  }
+
+  .welcome-card h2 {
+    font-size: 24px;
+  }
+
+  .grid {
+    gap: 10px;
+  }
+
+  .grid .card {
+    padding: 15px;
+  }
+
+  .card strong {
+    font-size: 21px;
+  }
+
+  .bottom-nav {
+    height: 72px;
+  }
+}
+  
